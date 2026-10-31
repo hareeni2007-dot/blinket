@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: bluecode-os-payu
+    runtime: docker
+    plan: starter
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PAYU_ENV
+        value: test
+      - key: CLIENT_URL
+        sync: false
+      - key: SERVER_URL
+        sync: false
+      - key: MONGODB_URI
+        sync: false
+      - key: PAYU_MERCHANT_KEY
+        sync: false
+      - key: PAYU_MERCHANT_SALT
+        sync: false
+      - key: ADMIN_SECRET_KEY
+        sync: false
+      - key: PAYU_REFUND_CALLBACK_URL
+        sync: false

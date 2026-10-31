@@ -1,0 +1,12 @@
+{
+  "name": "bluecode-os-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"blue,green\" \"npm --prefix BlueCodeOS-PayU-MERN/server run dev\" \"npm --prefix BlueCodeOS-PayU-MERN/client run dev\"",
+    "start": "concurrently -n \"SERVER,CLIENT\" -c \"blue,green\" \"npm --prefix BlueCodeOS-PayU-MERN/server run dev\" \"npm --prefix BlueCodeOS-PayU-MERN/client run dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

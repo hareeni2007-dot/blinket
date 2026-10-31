@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+
+# Environment configurations (NEVER commit secrets to Git)
+.env
+.env.*
+.env.local
+!.env.example
+
+# Production builds & temporary files
+dist/
+build/
+*.log
+.DS_Store
+Thumbs.db
